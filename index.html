@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>倒數計時器</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wind Tunnel Interaction</title>
+
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- p5.js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
 </head>
+
 <body>
 
-    <div class="container">
-        <h1>倒數計時器</h1>
+  <!-- Landing Page -->
+  <div id="landing">
+    <div class="card">
+      <h1>🌬 Wind Tunnel Simulation</h1>
+      <p>互動式風場視覺化作品</p>
 
-        <input
-            type="number"
-            id="secondsInput"
-            placeholder="請輸入秒數"
-            min="1"
-        >
+      <ul>
+        <li>滑鼠移動：影響風流方向</li>
+        <li>左鍵點擊：產生障礙物</li>
+        <li>R 鍵：重置畫面</li>
+      </ul>
 
-        <div id="display">00:00:00</div>
-
-        <div class="buttons">
-            <button id="startBtn">開始</button>
-            <button id="pauseBtn">暫停</button>
-            <button id="resumeBtn">繼續</button>
-            <button id="resetBtn">重置</button>
-        </div>
+      <button onclick="startExperience()">開始體驗</button>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
