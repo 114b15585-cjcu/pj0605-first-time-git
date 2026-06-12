@@ -1,34 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Wind Tunnel Interaction</title>
-
-  <link rel="stylesheet" href="style.css"/>
-
-  <!-- p5.js -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atomic Wind Field</title>
+  <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script src="script.js"></script>
 </head>
-
 <body>
 
-  <!-- Landing Page -->
-  <div id="landing">
-    <div class="card">
-      <h1>🌬 Wind Tunnel Simulation</h1>
-      <p>互動式風場視覺化作品</p>
+<div id="overlay">
+  <div id="panel">
+    <div id="title">ATOMIC WIND FIELD</div>
+    <div id="subtitle">Electron Flow Simulation</div>
 
-      <ul>
-        <li>滑鼠移動：影響風流方向</li>
-        <li>左鍵點擊：產生障礙物</li>
-        <li>R 鍵：重置畫面</li>
-      </ul>
-
-      <button onclick="startExperience()">開始體驗</button>
+    <div id="info">
+      滑鼠 = 改變電場方向<br>
+      左鍵 = 放置原子核（障礙物）<br>
+      R = 重置原子結構<br>
+      電子會在電場中形成流動軌跡
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <button id="startBtn">ENTER FIELD</button>
+  </div>
+</div>
+
 </body>
 </html>
